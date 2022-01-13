@@ -17,6 +17,10 @@ body{
     
 }
 
+header{
+    width:100%;
+}
+
 nav a, form{
     padding:.4%;
 }
@@ -27,10 +31,12 @@ nav a, form{
 
 article{
     background-color: rgb(255, 255, 255);
+    width:100%;
 }
 
 section{
     text-align: center;
+    width:100%;
 }
 
 nav{
@@ -52,6 +58,7 @@ footer{
     display:flex;
     justify-content: center;
     background-color: rgb(140, 141, 140);
+    width:100%;
 }
 
 footer div{
@@ -89,22 +96,49 @@ img{
     object-fit: cover;
 }
 
-button{
+.carrousel button{
     border-radius: 20%;
     margin-bottom: 1%;
     width:20px;
     height:20px;
 }
 
-button:hover{
+.carrousel button:hover{
     border-color:rgb(0, 0, 0);
     cursor: pointer;
 }
 
-button:active{
+.carrousel button:active{
     width: 19px;
     height: 19px;
 }
+
+.nuevoNav button{
+    background-color: rgb(255, 255, 255);
+}
+
+.fa-list, .fa-search{
+    color:rgb(0, 0, 0);
+    background-color: rgb(255, 255, 255);
+    font-size: 30px;
+    padding:.2%;
+}
+
+.nuevoNav, .Resnavegador{
+    display:none;
+    background-color: rgb(255, 255, 255);
+}
+
+.Resnavegador{
+    background-color: rgb(255, 255, 255);
+    flex-direction:column;
+}
+
+.menuVista{
+    display:flex;
+}
+
+
 
 
 @keyframes achicarse{
@@ -115,5 +149,32 @@ button:active{
     to{
         width: 350px;
         height: 450px;
+    }
+}
+
+@media(max-width: 1100px){
+    h1{
+        font-size: 115px;
+    }
+    img{
+        width: 98%;
+        height: 400px;
+        object-fit: cover;
+    }
+    .nuevoNav{
+        display:block;
+    }
+    .navegador{
+        display:none;
+    }
+}
+
+@media(max-width: 290px){
+    h1{
+        font-size: 90px
+    }
+
+    footer{
+        display:block;
     }
 }
