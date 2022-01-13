@@ -10,11 +10,33 @@
     <link rel="stylesheet" href="CSS/normalize.css">
     <link rel="stylesheet" href="CSS/style.css">
     <link rel="canonical" href="">
+    <script src="https://kit.fontawesome.com/1a869df086.js" crossorigin="anonymous"></script>
 </head>
 <body>
     <header>
+        <div class="nuevoNav">
+            <div class="menuVista">
+                <button onclick="mostrar()"><i class="fas fa-list"></i></button>
+                <form>
+                    <input type="search" name="busqueda" list="lista" placeholder="Busca aqui">
+                    <input type="submit" value="Buscar">
+                </form>
+                <datalist id="lista">
+                    <option value="Valor">
+                    <option value="1">
+                    <option value="2">
+                    <option value="3">
+                </datalist>
+            </div>
+            <div class="Resnavegador">
+                <a onclick="enlace()">Productos</a>
+                <a onclick="enlace()">Contactos</a>
+                <a onclick="enlace()">Iniciar sesión</a>
+                <a onclick="enlace()">Registrarse</a>
+            </div>
+        </div>
         <h1>Glitterina</h1>
-        <nav>
+        <nav class="navegador">
             <a onclick="enlace()">Productos</a>
             <a onclick="enlace()">Contactos</a>
             <a onclick="enlace()">Iniciar sesión</a>
