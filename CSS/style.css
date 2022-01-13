@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Katibeh&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Aleo:wght@300&family=Katibeh&display=swap');
+
+html{
+    scroll-behavior: smooth;
+}
+
+h1{
+    font-family: 'Katibeh', cursive;
+    font-size: 150px;
+    margin-left:1%;
+    color:rgb(0, 0, 0);
+}
+
+body{
+    background-image: url("../Imagenes/fondo.jpg");
+    
+}
+
+nav a, form{
+    padding:.4%;
+}
+
+.carrousel{
+    background-color: rgb(140, 141, 140);
+}
+
+article{
+    background-color: rgb(255, 255, 255);
+}
+
+section{
+    text-align: center;
+}
+
+nav{
+    display: flex;
+    margin-top: -160px;
+    justify-content: flex-end;
+    background-color: rgb(255, 255, 255);
+}
+
+a, h4, h3, h2, input::placeholder{
+    font-family: 'Aleo', serif;
+}
+
+h2{
+    text-align: center;
+}
+
+footer{
+    display:flex;
+    justify-content: center;
+    background-color: rgb(140, 141, 140);
+}
+
+footer div{
+    padding:2%;
+}
+
+footer a:hover{
+    color:rgb(0, 0, 0);
+    cursor:pointer;
+}
+
+a{
+    cursor:pointer;
+}
+
+a img{
+    width: 400px;
+    height: 500px;
+    border: rgb(0, 0, 0);
+    box-shadow: 5px 2px 6px 5px rgb(140, 141, 140);
+    cursor:pointer;
+}
+
+a:hover{
+    color:rgb(140, 141, 140);
+}
+
+a img:hover{
+    animation: achicarse 1s forwards;
+}
+
+img{
+    width: 99.9%;
+    height: 400px;
+    object-fit: cover;
+}
+
+button{
+    border-radius: 20%;
+    margin-bottom: 1%;
+    width:20px;
+    height:20px;
+}
+
+button:hover{
+    border-color:rgb(0, 0, 0);
+    cursor: pointer;
+}
+
+button:active{
+    width: 19px;
+    height: 19px;
+}
+
+
+@keyframes achicarse{
+    from{
+        width: 400px;
+        height: 500px;
+    }
+    to{
+        width: 350px;
+        height: 450px;
+    }
+}

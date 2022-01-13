@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="es-ar">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Página principal de este simulador de negocio de vestidos.">
+    <meta name="theme-color" content="#FFFFFF">
+    <title>Glitterina</title>
+    <link rel="stylesheet" href="CSS/normalize.css">
+    <link rel="stylesheet" href="CSS/style.css">
+    <link rel="canonical" href="">
+</head>
+<body>
+    <header>
+        <h1>Glitterina</h1>
+        <nav>
+            <a onclick="enlace()">Productos</a>
+            <a onclick="enlace()">Contactos</a>
+            <a onclick="enlace()">Iniciar sesión</a>
+            <a onclick="enlace()">Registrarse</a>
+            <form>
+                <input type="search" name="busqueda" list="lista" placeholder="Busca aqui">
+                <input type="submit" value="Buscar">
+            </form>
+            <datalist id="lista">
+                <option value="Valor">
+                <option value="1">
+                <option value="2">
+                <option value="3">
+            </datalist>
+        </nav>
+    </header>
+    <article>
+        <section class="carrousel">
+            <img src="" class="imgCarrousel">
+            <button onclick= "imagen1()">♦</button>
+            <button onclick= "imagen2()">♦</button>
+            <button onclick= "imagen3()">♦</button>
+        </section>
+        <br>
+        <section>
+            <h2>Vestidos destacados</h2>
+            <!--<p>Vestido corto con detalle metálico.</p>-->
+            <a onclick="enlace()"><img src="Imagenes/vestido1.jpg" alt="Vestido destacado"></a>
+            <!--<p>Vestido elegante con apliques de pluma de Jenny Packham.</p>-->
+            <a onclick="enlace()"><img src="Imagenes/vestido2.jpg" alt="Vestido destacado"></a>
+            <!--<p>Vestido corto vintage con escote en pico.</p>-->
+            <a onclick="enlace()"><img src="Imagenes/vestido3.jpg" alt="Vestido destacado"></a>
+            <!--<p>Vestido corto elegante juvenil.</p>-->
+            <a onclick="enlace()"><img src="Imagenes/vestido4.jpg" alt="Vestido destacado"></a>
+            <!--<p>Vestido corto para fiestas de XV.</p>-->
+            <a onclick="enlace()"><img src="Imagenes/vestido5.jpg" alt="Vestido destacado"></a>
+            <!--<p>Vestido corto de tirantes.</p>-->
+            <a onclick="enlace()"><img src="Imagenes/vestido6.jpg" alt="Vestido destacado"></a>
+            <!--<p>Vestido largo ajustado.</p>-->
+            <a onclick="enlace()"><img src="Imagenes/vestido7.jpg" alt="Vestido destacado"></a>
+            <!--<p>Vestido midi drapeado.</p>-->
+            <a onclick="enlace()"><img src="Imagenes/vestido8.jpg" alt="Vestido destacado"></a>
+        </section>
+        <br>
+    </article>
+    <footer>
+        <div class="datos">
+            <h3><b>Datos</b></h3>
+            <h4>Tienda de vestidos Glitterina.</h4>
+            <h4>Envios nacionales.</h4>
+            <h4>Todos los medios de pagos disponibles.</h4>
+        </div>
+        <div class="informacion">
+            <h3><b>Información</b></h3>
+            <a onclick="enlace()"><h4>Sucursales</h4></a>
+            <a onclick="enlace()"><h4>Cómo comprar online</h4></a>
+            <a onclick="enlace()"><h4>Acerca de nosotros</h4></a>
+        </div>
+        <div class="redes">
+            <h3><b>Seguinos en</b></h3>
+            <a onclick="enlace()"><h4>Facebook</h4></a>
+            <a onclick="enlace()"><h4>Instagram</h4></a>
+        </div>
+    </footer>
+    <script src="Javascript/cod.js"></script>
+</body>
+</html>
